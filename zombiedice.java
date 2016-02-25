@@ -41,10 +41,12 @@ class zombiedice{
 		 	 System.out.println("");
 		 	 System.out.println("current number of players = " + numOfplayers); // feature for user to display current number of players 
 		 	 System.out.println("\n\n");
-			 System.out.println("1.Choose number of players"); 
-			 System.out.println("2.Play game"); 
-			 System.out.println("3.Exit game");
-			 System.out.println("\n\n\n\n");
+		 	 System.out.println(" ____________________________");
+			 System.out.println("| 1.Choose number of players |"); 
+			 System.out.println("| 2.Play game                |"); 
+			 System.out.println("| 3.Exit game                |");
+			 System.out.println(" ____________________________");
+			 System.out.println("\n");
 			
 
 			 select = in.nextInt();  // reads in what the user selects
@@ -60,7 +62,7 @@ class zombiedice{
 			}
 
 			else if (select == 2){ // if select is = 2 then the dice will be rolled
-				System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+				System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n");
 				System.out.println("---------------------------");
 				System.out.println("~ You Have rolled the dice ~"); 
 				System.out.println("---------------------------");
@@ -71,7 +73,7 @@ class zombiedice{
 				System.out.println("");
 			}
 
-                   
+            /*--------------------------------------------------------start of dice -------------------------------------------------------*/
 
 				if(dice1==1){ // if dice1 lands on 1 
 					System.out.println("");
@@ -259,14 +261,19 @@ class zombiedice{
 					else if(throw1 == green[5]){ // if throw1 lands on postion 5 in the array
 						brains++; // brains in incremented
 						System.out.println("Brains"); // user gets brains
-						System.out.println(brains);
 					}
 				}
 
+		/*--------------------------------------------------------end of dice -------------------------------------------------------*/
+
 			if(brains == 13){
-				System.out.println("Congratulations");
 				exit=0;	
 			}
+
+			else if(shotgun==3){
+				exit=0;
+			}
+
 
 			else if(select == 3){ //if user selects 3 the game will end
 				exit=0; //variable to exit program
@@ -275,17 +282,22 @@ class zombiedice{
 		}
 
 		while(exit!=0);     // As long as exit is not = 0 the game will keep running, otherwise the game will end
-		System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-		System.out.println("----------------------");
-		System.out.println("Player 1 score = " + brains);  
-		System.out.println("----------------------");
-		System.out.println("\n\n\n");
-		System.out.println("Thanks for playing!!!");
-		System.out.println("----------------------");
-		System.out.println("\n\n");
+			if(brains == 13){
+				System.out.println("Congratulations you win!!!!");
+				System.out.println("\n");
+				System.out.println("----------------------");
+				System.out.println("Player 1 score = " + brains);  
+				System.out.println("----------------------");
+				System.out.println("\n\n\n");
+				System.out.println("Thanks for playing!!!");
+				System.out.println("----------------------");
+				System.out.println("\n\n");
+			}
+			else if(shotgun==3){
+				System.out.println("\n\n\n\n\n\n");
+				System.out.println("you have been shot 3 times, you lose your brains");
+				System.out.println("shotgun = " + shotgun);
+			}
 	}//end main()
 
 }//end zombiedice game
-
-
-
