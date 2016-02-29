@@ -197,7 +197,6 @@ class zombiedice{
 					throw1 = r.nextInt(6) + 1;   // throw1 will generate a number between 1 and 6
 					if(throw1 <= green[2] && player==1){  // if that number is less than position 3 in the array
 						brains1++;  // brains in incremented
-						brains1a = brains1 + brains1a-1;
 						System.out.println("Brains"); // user gets brains
 					}
 
@@ -212,7 +211,6 @@ class zombiedice{
 
 					if(throw1 <= green[2] && player==2){  // if that number is less than position 3 in the array
 						brains2++;  // brains in incremented
-						brains2a = brains2 + brains2a -1;
 						System.out.println("Brains"); // user gets brains
 					}
 					else if(throw1 == green[3] && player==2 || throw1 == green[4] && player==2){ // if throw1 lands on position 3 or 4 in the array
@@ -225,7 +223,6 @@ class zombiedice{
 
 					if(throw1 <= green[2] && player==3){  // if that number is less than position 3 in the array
 						brains3++;  // brains in incremented
-						brains3a = brains3 + brains3a-1;
 						System.out.println("Brains"); // user gets brains
 					}
 					else if(throw1 == green[3] && player==3 || throw1 == green[4] && player==3){ // if throw1 lands on position 3 or 4 in the array
@@ -244,7 +241,6 @@ class zombiedice{
 					throw1 = r.nextInt(6) + 1; // throw1 will generate a number between 1 and 6
 					if(throw1 <= yellow[1] && player==1){ // if that number is less than position 1 in the array
 						brains1++; // brains in incremented
-						brains1a = brains1 + brains1a-1;
 						System.out.println("Brains"); // user gets brains
 				    }
 					else if(throw1 == yellow[2] && player==1 || throw1 == yellow[3] && player==1){ // if throw1 lands on position 2 or 3 in the array
@@ -257,7 +253,6 @@ class zombiedice{
 
 					if(throw1 <= yellow[1] && player==2){ // if that number is less than position 1 in the array
 						brains2++; // brains in incremented
-						brains2a = brains2 + brains2a-1;
 						System.out.println("Brains"); // user gets brains
 				    }
 					else if(throw1 == yellow[2] && player==2 || throw1 == yellow[3] && player==2){ // if throw1 lands on position 2 or 3 in the array
@@ -270,7 +265,6 @@ class zombiedice{
 
 					if(throw1 <= yellow[1] && player==3){ // if that number is less than position 1 in the array
 						brains3++; // brains in incremented
-						brains3a = brains3 + brains3a-1;
 						System.out.println("Brains"); // user gets brains
 				    }
 					else if(throw1 == yellow[2] && player==3 || throw1 == yellow[3] && player==3){ // if throw1 lands on position 2 or 3 in the array
@@ -298,7 +292,6 @@ class zombiedice{
 
 					else if(throw1 == red[5] && player==1){ // if throw1 lands on postion 5 in the array
 						brains1++; // brains in incremented
-						brains1a = brains1 + brains1a-1;
 						System.out.println("Brains"); // user gets brains
 					}
 
@@ -313,7 +306,6 @@ class zombiedice{
 
 					else if(throw1 == red[5] && player==2){ // if throw1 lands on postion 5 in the array
 						brains2++; // brains in incremented
-						brains2a = brains2 + brains2a-1;
 						System.out.println("Brains"); // user gets brains
 					}
 
@@ -328,7 +320,6 @@ class zombiedice{
 
 					else if(throw1 == red[5] && player==3){ // if throw1 lands on postion 5 in the array
 						brains3++; // brains in incremented
-						brains3a = brains3 + brains3a-1;
 						System.out.println("Brains"); // user gets brains
 					}
 				}
@@ -344,7 +335,6 @@ class zombiedice{
 					throw2 = r.nextInt(6) + 1;   // throw2 will generate a number between 1 and 6
 					if(throw2 <= green[2] && player==1){  // if that number is less than position 3 in the array
 						brains1++;  // brains in incremented
-						brains1a = brains1 + brains1a-1;
 						System.out.println("Brains"); // user gets brains
 					}
 
@@ -360,7 +350,6 @@ class zombiedice{
 
 					if(throw2 <= green[2] && player==2){  // if that number is less than position 3 in the array
 						brains2++;  // brains in incremented
-						brains2a = brains2 + brains2a-1;
 						System.out.println("Brains"); // user gets brains
 					}
 
@@ -375,7 +364,6 @@ class zombiedice{
 
 					if(throw2 <= green[2] && player==3){  // if that number is less than position 3 in the array
 						brains3++;  // brains in incremented
-						brains3a = brains3 + brains3a-1;
 						System.out.println("Brains"); // user gets brains
 					}
 
@@ -396,7 +384,6 @@ class zombiedice{
 					throw2 = r.nextInt(6) + 1; // throw2 will generate a number between 1 and 6
 					if(throw2 <= yellow[1] && player==1){ // if that number is less than position 1 in the array
 						brains1++; // brains in incremented
-						brains1a = brains1 + brains1a-1;
 						System.out.println("Brains"); // user gets brains
 					}
 					else if(throw2 == yellow[2] && player==1 || throw2 == yellow[3] && player==1){ // if throw2 lands on position 2 or 3 in the array
@@ -409,7 +396,6 @@ class zombiedice{
 
 					if(throw2 <= yellow[1] && player==2){ // if that number is less than position 1 in the array
 						brains2++; // brains in incremented
-						brains2a = brains2 + brains2a-1;
 						System.out.println("Brains"); // user gets brains
 					}
 					else if(throw2 == yellow[2] && player==2 || throw2 == yellow[3] && player==2){ // if throw2 lands on position 2 or 3 in the array
@@ -422,7 +408,6 @@ class zombiedice{
 
 					if(throw2 <= yellow[1] && player==3){ // if that number is less than position 1 in the array
 						brains3++; // brains in incremented
-						brains3a = brains3 + brains3a-1;
 						System.out.println("Brains"); // user gets brains
 					}
 					else if(throw2 == yellow[2] && player==3 || throw2 == yellow[3] && player==3){ // if throw2 lands on position 2 or 3 in the array
@@ -448,7 +433,6 @@ class zombiedice{
 					}
 					else if(throw2 == red[5]  && player==1){ // if throw2 lands on postion 5 in the array
 						brains1++; // brains in incremented
-						brains1a = brains1 + brains1a-1;
 						System.out.println("Brains"); // user gets brains
 					}
 
@@ -462,7 +446,6 @@ class zombiedice{
 					}
 					else if(throw2 == red[5]  && player==2){ // if throw2 lands on postion 5 in the array
 						brains2++; // brains in incremented
-						brains2a = brains2 + brains2a-1;
 						System.out.println("Brains"); // user gets brains
 					}
 
@@ -476,7 +459,6 @@ class zombiedice{
 					}
 					else if(throw2 == red[5]  && player==3){ // if throw2 lands on postion 5 in the array
 						brains3++; // brains in incremented
-						brains3a = brains3 + brains3a-1;
 						System.out.println("Brains"); // user gets brains
 					}
 				}
@@ -492,7 +474,6 @@ class zombiedice{
 					throw3 = r.nextInt(6) + 1;   // throw1 will generate a number between 1 and 6
 					if(throw3 <= green[2] && player==1){  // if that number is less than position 3 in the array
 						brains1++;  // brains in incremented
-						brains1a = brains1 + brains1a-1;
 						System.out.println("Brains"); // user gets brains	
 					}
 					else if(throw3 == green[3] && player==1 || throw1 == green[4] && player==1){ // if throw1 lands on position 3 or 4 in the array
@@ -506,7 +487,6 @@ class zombiedice{
 
 					if(throw3 <= green[2] && player==2){  // if that number is less than position 3 in the array
 						brains2++;  // brains in incremented
-						brains2a = brains2 + brains2a-1;
 						System.out.println("Brains"); // user gets brains	
 					}
 					else if(throw3 == green[3] && player==2 || throw3 == green[4] && player==2){ // if throw1 lands on position 3 or 4 in the array
@@ -520,7 +500,6 @@ class zombiedice{
 
 					if(throw3 <= green[2] && player==3){  // if that number is less than position 3 in the array
 						brains3++;  // brains in incremented
-						brains3a = brains3 + brains3a-1;
 						System.out.println("Brains"); // user gets brains	
 					}
 					else if(throw3 == green[3] && player==3 || throw3 == green[4] && player==3){ // if throw1 lands on position 3 or 4 in the array
@@ -541,7 +520,6 @@ class zombiedice{
 					throw1 = r.nextInt(6) + 1; // throw1 will generate a number between 1 and 6
 					if(throw3 <= yellow[1] && player==1){ // if that number is less than position 1 in the array
 						brains1++; // brains in incremented
-						brains1a = brains1 + brains1a-1;
 						System.out.println("Brains"); // user gets brains
 						
 					}
@@ -555,7 +533,6 @@ class zombiedice{
 
 					if(throw3 <= yellow[1] && player==2){ // if that number is less than position 1 in the array
 						brains2++; // brains in incremented
-						brains2a = brains2 + brains2a-1;
 						System.out.println("Brains"); // user gets brains
 					}
 					else if(throw3 == yellow[2] && player==2 || throw3 == yellow[3] && player==2){ // if throw1 lands on position 2 or 3 in the array
@@ -568,7 +545,6 @@ class zombiedice{
 
 					if(throw3 <= yellow[1] && player==3){ // if that number is less than position 1 in the array
 						brains3++; // brains in incremented
-						brains3a = brains3 + brains3a-1;
 						System.out.println("Brains"); // user gets brains
 					}
 					else if(throw3 == yellow[2] && player==3 || throw3 == yellow[3] && player==3){ // if throw1 lands on position 2 or 3 in the array
@@ -594,7 +570,6 @@ class zombiedice{
 					}
 					else if(throw3 == red[5] && player==1){ // if throw1 lands on postion 5 in the array
 						brains1++; // brains in incremented
-						brains1a = brains1 + brains1a-1;
 						System.out.println("Brains"); // user gets brains
 					}
 
@@ -607,7 +582,6 @@ class zombiedice{
 					}
 					else if(throw3 == red[5] && player==2){ // if throw1 lands on postion 5 in the array
 						brains2++; // brains in incremented
-						brains2a = brains2 + brains2a-1;
 						System.out.println("Brains"); // user gets brains
 					}
 
@@ -621,14 +595,13 @@ class zombiedice{
 					}
 					else if(throw3 == red[5] && player==3){ // if throw1 lands on postion 5 in the array
 						brains3++; // brains in incremented
-						brains3a = brains3 + brains3a-1;
 						System.out.println("Brains"); // user gets brains
 					}
 				}
 
 		    /*----------------------------------------------------------end of dice -------------------------------------------------------*/
 
-			if(brains1>=13 && player==1 || brains2>=13 && player==2 || brains3>= 13 && player==3){
+			if(brains1a>=13 && player==1 || brains2a>=13 && player==2 || brains3a>= 13 && player==3){
 				game=1;
 				exit=0;	
 			}
@@ -648,22 +621,25 @@ class zombiedice{
 			System.out.println("Do you want to roll again??? or would you rather cash out???");
 			select2 = in.nextInt();
 				if(select2==2 && player==1){
+					brains1a= brains1a + brains1;
 					System.out.println(""); 
 					System.out.println("Player 1 cashed out, score = " + brains1a);
 					player++;
-					//brains1=0; // brains is = 0 at start of each turn
+					
 				}
 				else if(select2==2 && player==2){
+					brains2a= brains2a + brains2;
 					System.out.println(""); 
 					System.out.println("Player 2 cashed out, score " + brains2a);
 					player++;
-					//brains2=0; // brains is = 0 at start of each turn
+					
 				}
 				else if(select2==2 && player==3){
+					brains3a= brains3a + brains3;
 					System.out.println(""); 
 					System.out.println("Player 3 cashed out, score " + brains3a);
 					player++;
-					//brains3=0; // brains is = 0 at start of each turn
+					
 				}
 			}
 			/*-------------------------------end of loop-----------------------------*/
