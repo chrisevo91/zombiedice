@@ -16,8 +16,6 @@ class zombiedice{
 		int select;
 		int select2;
 		int player = 0;
-		int player1 = 0;
-		int player2 = 0;
 		int throw1 = 0;
 		int throw2 = 0;
 		int throw3 = 0;
