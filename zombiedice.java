@@ -1,3 +1,4 @@
+
 /*christopher eviston 2894321 
 This is an assigment to build a zombie dice game */
 
@@ -159,11 +160,11 @@ class zombiedice{
 	 /*--------------------------------------------------------start of game -------------------------------------------------------*/
 
            
-            	while(game==0){
+            	while(game==0){ // while game is = 0 loop will continue
 
             		
            
-            		if(player>numOfplayers){
+            		if(player>numOfplayers){ // when player int is incremented past selected numOfplayers it resets to player 1
             			player=1;
             		}
 
@@ -193,40 +194,40 @@ class zombiedice{
 					System.out.println("");
 					System.out.println("[green]"); // user gets the green die
 					throw1 = r.nextInt(6) + 1;   // throw1 will generate a number between 1 and 6
-					if(throw1 <= green[2] && player==1){  // if that number is less than position 3 in the array
+					if(throw1 <= green[2] && player==1){  // if that number is less than position 3 in the array + player = 1
 						brains1++;  // brains in incremented
 						System.out.println("Brains"); // user gets brains
 					}
 
-					else if(throw1 == green[3] && player==1 || throw1 == green[4] && player==1){ // if throw1 lands on position 3 or 4 in the array
+					else if(throw1 == green[3] && player==1 || throw1 == green[4] && player==1){ // if throw1 lands on position 3 or 4 in the array + player = 1
 						System.out.println("Footsteps"); // user gets footsteps
 					}
 						
-					else if(throw1 == green[5] && player==1){ // if throw1 is at position 5 in the array
-						shotgun1++; // shotgun is incremented
+					else if(throw1 == green[5] && player==1){ // if throw1 is at position 5 in the array + player = 1
+						shotgun1++; // shotgun is incremented 
 						System.out.println("Shotgun"); // user gets shotgun
 					}
 
-					if(throw1 <= green[2] && player==2){  // if that number is less than position 3 in the array
+					else if(throw1 <= green[2] && player==2){  // if that number is less than position 3 in the array + player = 2
 						brains2++;  // brains in incremented
 						System.out.println("Brains"); // user gets brains
 					}
-					else if(throw1 == green[3] && player==2 || throw1 == green[4] && player==2){ // if throw1 lands on position 3 or 4 in the array
+					else if(throw1 == green[3] && player==2 || throw1 == green[4] && player==2){ // if throw1 lands on position 3 or 4 in the array + player = 2
 						System.out.println("Footsteps"); // user gets footsteps
 					}	
-					else if(throw1 == green[5] && player==2){ // if throw1 is at position 5 in the array
+					else if(throw1 == green[5] && player==2){ // if throw1 is at position 5 in the array + player = 2
 						shotgun2++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun
 					}
 
-					if(throw1 <= green[2] && player==3){  // if that number is less than position 3 in the array
+					else if(throw1 <= green[2] && player==3){  // if that number is less than position 3 in the array + player = 3
 						brains3++;  // brains in incremented
 						System.out.println("Brains"); // user gets brains
 					}
-					else if(throw1 == green[3] && player==3 || throw1 == green[4] && player==3){ // if throw1 lands on position 3 or 4 in the array
+					else if(throw1 == green[3] && player==3 || throw1 == green[4] && player==3){ // if throw1 lands on position 3 or 4 in the array + player = 3
 						System.out.println("Footsteps"); // user gets footsteps
 					}	
-					else if(throw1 == green[5] && player==3){ // if throw1 is at position 5 in the array
+					else if(throw1 == green[5] && player==3){ // if throw1 is at position 5 in the array + player = 3
 						shotgun3++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun
 					}
@@ -237,39 +238,39 @@ class zombiedice{
 					System.out.println("");
 					System.out.println("[yellow]"); // user gets yellow die
 					throw1 = r.nextInt(6) + 1; // throw1 will generate a number between 1 and 6
-					if(throw1 <= yellow[1] && player==1){ // if that number is less than position 1 in the array
+					if(throw1 <= yellow[1] && player==1){ // if that number is less than position 1 in the array + player = 1
 						brains1++; // brains in incremented
 						System.out.println("Brains"); // user gets brains
 				    }
-					else if(throw1 == yellow[2] && player==1 || throw1 == yellow[3] && player==1){ // if throw1 lands on position 2 or 3 in the array
+					else if(throw1 == yellow[2] && player==1 || throw1 == yellow[3] && player==1){ // if throw1 lands on position 2 or 3 in the array + player = 1
 						System.out.println("Footsteps");  // user gets footsteps
 					}
-					else if(throw1 == yellow[4] && player==1 || throw1 == yellow[5] && player==1){ // if throw1 lands on position 4 or 5 in the array
+					else if(throw1 == yellow[4] && player==1 || throw1 == yellow[5] && player==1){ // if throw1 lands on position 4 or 5 in the array + player = 1
 						shotgun1++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun
 					}
 
-					if(throw1 <= yellow[1] && player==2){ // if that number is less than position 1 in the array
+					else if(throw1 <= yellow[1] && player==2){ // if that number is less than position 1 in the array + player = 2
 						brains2++; // brains in incremented
 						System.out.println("Brains"); // user gets brains
 				    }
-					else if(throw1 == yellow[2] && player==2 || throw1 == yellow[3] && player==2){ // if throw1 lands on position 2 or 3 in the array
+					else if(throw1 == yellow[2] && player==2 || throw1 == yellow[3] && player==2){ // if throw1 lands on position 2 or 3 in the array + player = 2
 						System.out.println("Footsteps");  // user gets footsteps
 					}	
-					else if(throw1 == yellow[4] && player==2 || throw1 == yellow[5] && player==2){ // if throw1 lands on position 4 or 5 in the array
+					else if(throw1 == yellow[4] && player==2 || throw1 == yellow[5] && player==2){ // if throw1 lands on position 4 or 5 in the array + player = 2
 						shotgun2++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun
 					}
 
-					if(throw1 <= yellow[1] && player==3){ // if that number is less than position 1 in the array
+					else if(throw1 <= yellow[1] && player==3){ // if that number is less than position 1 in the array + player = 3
 						brains3++; // brains in incremented
 						System.out.println("Brains"); // user gets brains
 				    }
-					else if(throw1 == yellow[2] && player==3 || throw1 == yellow[3] && player==3){ // if throw1 lands on position 2 or 3 in the array
+					else if(throw1 == yellow[2] && player==3 || throw1 == yellow[3] && player==3){ // if throw1 lands on position 2 or 3 in the array + player = 3
 						System.out.println("Footsteps");  // user gets footsteps
 					}
 						
-					else if(throw1 == yellow[4] && player==3 || throw1 == yellow[5] && player==3){ // if throw1 lands on position 4 or 5 in the array
+					else if(throw1 == yellow[4] && player==3 || throw1 == yellow[5] && player==3){ // if throw1 lands on position 4 or 5 in the array + player = 3
 						shotgun3++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun
 					}
@@ -279,44 +280,44 @@ class zombiedice{
 				else if(dice1==3){ // if dice1 lands on 3
 					System.out.println("");
 					System.out.println("[red]"); // user gets red die
-					if(throw1 <= red[2] && player==1){ // if throw1 is less than position 2
+				    if(throw1 <= red[2] && player==1){ // if throw1 is less than position 2 + player = 1
 						shotgun1++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun
 					}
 
-					else if(throw1 == red[3] && player==1 || throw1 == red[4] && player==1){ // if throw1 lands on position 3 or 4 in the array
+					else if(throw1 == red[3] && player==1 || throw1 == red[4] && player==1){ // if throw1 lands on position 3 or 4 in the array + player = 1
 						System.out.println("Footsteps"); // user gets footsteps
 					}
 
-					else if(throw1 == red[5] && player==1){ // if throw1 lands on postion 5 in the array
+					else if(throw1 == red[5] && player==1){ // if throw1 lands on postion 5 in the array + player = 1
 						brains1++; // brains in incremented
 						System.out.println("Brains"); // user gets brains
 					}
 
-					if(throw1 <= red[2] && player==2){ // if throw1 is less than position 2
+					else if(throw1 <= red[2] && player==2){ // if throw1 is less than position 2 + player = 2
 						shotgun2++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun
 					}
 
-					else if(throw1 == red[3] && player==2 || throw1 == red[4] && player==2){ // if throw1 lands on position 3 or 4 in the array
+					else if(throw1 == red[3] && player==2 || throw1 == red[4] && player==2){ // if throw1 lands on position 3 or 4 in the array + player = 2
 						System.out.println("Footsteps"); // user gets footsteps
 					}
 
-					else if(throw1 == red[5] && player==2){ // if throw1 lands on postion 5 in the array
+					else if(throw1 == red[5] && player==2){ // if throw1 lands on postion 5 in the array + player = 2
 						brains2++; // brains in incremented
 						System.out.println("Brains"); // user gets brains
 					}
 
-					if(throw1 <= red[2] && player==3){ // if throw1 is less than position 3
+					else if(throw1 <= red[2] && player==3){ // if throw1 is less than position 3 + player = 3
 						shotgun3++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun
 					}
 
-					else if(throw1 == red[3] && player==3 || throw1 == red[4] && player==3){ // if throw1 lands on position 3 or 4 in the array
+					else if(throw1 == red[3] && player==3 || throw1 == red[4] && player==3){ // if throw1 lands on position 3 or 4 in the array + player = 3
 						System.out.println("Footsteps"); // user gets footsteps
 					}
 
-					else if(throw1 == red[5] && player==3){ // if throw1 lands on postion 5 in the array
+					else if(throw1 == red[5] && player==3){ // if throw1 lands on postion 5 in the array + player = 3
 						brains3++; // brains in incremented
 						System.out.println("Brains"); // user gets brains
 					}
@@ -331,45 +332,45 @@ class zombiedice{
 			    	System.out.println("");
 					System.out.println("[green]"); // user gets the green die
 					throw2 = r.nextInt(6) + 1;   // throw2 will generate a number between 1 and 6
-					if(throw2 <= green[2] && player==1){  // if that number is less than position 3 in the array
+					if(throw2 <= green[2] && player==1){  // if that number is less than position 3 in the array + player = 1
 						brains1++;  // brains in incremented
 						System.out.println("Brains"); // user gets brains
 					}
 
-					else if(throw2 == green[3] && player==1 || throw2 == green[4] && player==1){ // if throw2 lands on position 3 or 4 in the array
+					else if(throw2 == green[3] && player==1 || throw2 == green[4] && player==1){ // if throw2 lands on position 3 or 4 in the array + player = 1
 						System.out.println("Footsteps"); // user gets footsteps
 					}
 
-					else if(throw2 == green[5] && player==1){ // if throw2 is at position 5 in the array
+					else if(throw2 == green[5] && player==1){ // if throw2 is at position 5 in the array + player = 1
 						shotgun1++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun
 						
 					}
 
-					if(throw2 <= green[2] && player==2){  // if that number is less than position 3 in the array
+					else if(throw2 <= green[2] && player==2){  // if that number is less than position 3 in the array + player = 2
 						brains2++;  // brains in incremented
 						System.out.println("Brains"); // user gets brains
 					}
 
-					else if(throw2 == green[3] && player==2 || throw2 == green[4] && player==2){ // if throw2 lands on position 3 or 4 in the array
+					else if(throw2 == green[3] && player==2 || throw2 == green[4] && player==2){ // if throw2 lands on position 3 or 4 in the array + player = 2
 						System.out.println("Footsteps"); // user gets footsteps
 					}
 
-					else if(throw2 == green[5] && player==2){ // if throw2 is at position 5 in the array
+					else if(throw2 == green[5] && player==2){ // if throw2 is at position 5 in the array + player = 2
 						shotgun2++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun
 					}
 
-					if(throw2 <= green[2] && player==3){  // if that number is less than position 3 in the array
+					else if(throw2 <= green[2] && player==3){  // if that number is less than position 3 in the array + player = 3
 						brains3++;  // brains in incremented
 						System.out.println("Brains"); // user gets brains
 					}
 
-					else if(throw2 == green[3] && player==3 || throw2 == green[4] && player==3){ // if throw2 lands on position 3 or 4 in the array
+					else if(throw2 == green[3] && player==3 || throw2 == green[4] && player==3){ // if throw2 lands on position 3 or 4 in the array + player = 3
 						System.out.println("Footsteps"); // user gets footsteps
 					}
 
-					else if(throw2 == green[5] && player==3){ // if throw2 is at position 5 in the array
+					else if(throw2 == green[5] && player==3){ // if throw2 is at position 5 in the array + player = 3
 						shotgun3++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun
 					}
@@ -380,38 +381,38 @@ class zombiedice{
 					System.out.println("");
 					System.out.println("[yellow]"); // user gets yellow die
 					throw2 = r.nextInt(6) + 1; // throw2 will generate a number between 1 and 6
-					if(throw2 <= yellow[1] && player==1){ // if that number is less than position 1 in the array
+					if(throw2 <= yellow[1] && player==1){ // if that number is less than position 1 in the array + player = 1
 						brains1++; // brains in incremented
 						System.out.println("Brains"); // user gets brains
 					}
-					else if(throw2 == yellow[2] && player==1 || throw2 == yellow[3] && player==1){ // if throw2 lands on position 2 or 3 in the array
+					else if(throw2 == yellow[2] && player==1 || throw2 == yellow[3] && player==1){ // if throw2 lands on position 2 or 3 in the array + player = 1
 						System.out.println("Footsteps");  // user gets footsteps
 					}
-					else if(throw2 == yellow[4] && player==1 || throw2 == yellow[5] && player==1){ // if throw2 lands on position 4 or 5 in the array
+					else if(throw2 == yellow[4] && player==1 || throw2 == yellow[5] && player==1){ // if throw2 lands on position 4 or 5 in the array + player = 1
 						shotgun1++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun
 					}
 
-					if(throw2 <= yellow[1] && player==2){ // if that number is less than position 1 in the array
+					else if(throw2 <= yellow[1] && player==2){ // if that number is less than position 1 in the array + player = 2
 						brains2++; // brains in incremented
 						System.out.println("Brains"); // user gets brains
 					}
-					else if(throw2 == yellow[2] && player==2 || throw2 == yellow[3] && player==2){ // if throw2 lands on position 2 or 3 in the array
+					else if(throw2 == yellow[2] && player==2 || throw2 == yellow[3] && player==2){ // if throw2 lands on position 2 or 3 in the array + player = 2
 						System.out.println("Footsteps");  // user gets footsteps
 					}
-					else if(throw2 == yellow[4] && player==2 || throw2 == yellow[5] && player==2){ // if throw2 lands on position 4 or 5 in the array
+					else if(throw2 == yellow[4] && player==2 || throw2 == yellow[5] && player==2){ // if throw2 lands on position 4 or 5 in the array + player = 2
 						shotgun2++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun
 					}
 
-					if(throw2 <= yellow[1] && player==3){ // if that number is less than position 1 in the array
+					else if(throw2 <= yellow[1] && player==3){ // if that number is less than position 1 in the array + player = 3
 						brains3++; // brains in incremented
 						System.out.println("Brains"); // user gets brains
 					}
-					else if(throw2 == yellow[2] && player==3 || throw2 == yellow[3] && player==3){ // if throw2 lands on position 2 or 3 in the array
+					else if(throw2 == yellow[2] && player==3 || throw2 == yellow[3] && player==3){ // if throw2 lands on position 2 or 3 in the array + player = 3
 						System.out.println("Footsteps");  // user gets footsteps
 					}
-					else if(throw2 == yellow[4] && player==3 || throw2 == yellow[5] && player==3){ // if throw2 lands on position 4 or 5 in the array
+					else if(throw2 == yellow[4] && player==3 || throw2 == yellow[5] && player==3){ // if throw2 lands on position 4 or 5 in the array + player = 3
 						shotgun3++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun
 					}
@@ -422,40 +423,40 @@ class zombiedice{
 				else if(dice2==3){ // if dice2 lands on 3
 					System.out.println("");
 					System.out.println("[red]"); // user gets red die
-					if(throw2 <= red[2] && player==1){ // if throw2 is less than position 3
+					if(throw2 <= red[2] && player==1){ // if throw2 is less than position 3 + player = 1
 						shotgun1++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun
 					}
-					else if(throw2 == red[3] && player==1 || throw2 == red[4]  && player==1){ // if throw2 lands on position 3 or 4 in the array
+					else if(throw2 == red[3] && player==1 || throw2 == red[4]  && player==1){ // if throw2 lands on position 3 or 4 in the array + player = 1
 						System.out.println("Footsteps"); // user gets footsteps
 					}
-					else if(throw2 == red[5]  && player==1){ // if throw2 lands on postion 5 in the array
+					else if(throw2 == red[5]  && player==1){ // if throw2 lands on postion 5 in the array + player = 1
 						brains1++; // brains in incremented
 						System.out.println("Brains"); // user gets brains
 					}
 
-					if(throw2 <= red[2] && player==2){ // if throw2 is less than position 3
+					else if(throw2 <= red[2] && player==2){ // if throw2 is less than position 3 + player = 2
 						shotgun2++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun
 					}
-					else if(throw2 == red[3] && player==2 || throw2 == red[4]  && player==2){ // if throw2 lands on position 3 or 4 in the array
+					else if(throw2 == red[3] && player==2 || throw2 == red[4]  && player==2){ // if throw2 lands on position 3 or 4 in the array + player = 2
 						
 						System.out.println("Footsteps"); // user gets footsteps
 					}
-					else if(throw2 == red[5]  && player==2){ // if throw2 lands on postion 5 in the array
+					else if(throw2 == red[5]  && player==2){ // if throw2 lands on postion 5 in the array + player = 2
 						brains2++; // brains in incremented
 						System.out.println("Brains"); // user gets brains
 					}
 
-					if(throw2 <= red[2] && player==3){ // if throw2 is less than position 3
+					else if(throw2 <= red[2] && player==3){ // if throw2 is less than position 3 + player = 3
 						shotgun3++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun
 					}
-					else if(throw2 == red[3] && player==3 || throw2 == red[4]  && player==3){ // if throw2 lands on position 3 or 4 in the array
+					else if(throw2 == red[3] && player==3 || throw2 == red[4]  && player==3){ // if throw2 lands on position 3 or 4 in the array + player = 3
 						
 						System.out.println("Footsteps"); // user gets footsteps
 					}
-					else if(throw2 == red[5]  && player==3){ // if throw2 lands on postion 5 in the array
+					else if(throw2 == red[5]  && player==3){ // if throw2 lands on postion 5 in the array + player = 3
 						brains3++; // brains in incremented
 						System.out.println("Brains"); // user gets brains
 					}
@@ -470,42 +471,42 @@ class zombiedice{
 			    	System.out.println("");
 					System.out.println("[green]"); // user gets the green die
 					throw3 = r.nextInt(6) + 1;   // throw1 will generate a number between 1 and 6
-					if(throw3 <= green[2] && player==1){  // if that number is less than position 3 in the array
+					if(throw3 <= green[2] && player==1){  // if that number is less than position 3 in the array + player = 1
 						brains1++;  // brains in incremented
 						System.out.println("Brains"); // user gets brains	
 					}
-					else if(throw3 == green[3] && player==1 || throw1 == green[4] && player==1){ // if throw1 lands on position 3 or 4 in the array
+					else if(throw3 == green[3] && player==1 || throw3 == green[4] && player==1){ // if throw1 lands on position 3 or 4 in the array + player = 1
 						
 						System.out.println("Footsteps"); // user gets footsteps
 					}
-					else if(throw3 == green[5] && player==1){ // if throw1 is at position 5 in the array
+					else if(throw3 == green[5] && player==1){ // if throw1 is at position 5 in the array + player = 1
 						shotgun1++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun
 					}
 
-					if(throw3 <= green[2] && player==2){  // if that number is less than position 3 in the array
+					else if(throw3 <= green[2] && player==2){  // if that number is less than position 3 in the array + player = 2
 						brains2++;  // brains in incremented
 						System.out.println("Brains"); // user gets brains	
 					}
-					else if(throw3 == green[3] && player==2 || throw3 == green[4] && player==2){ // if throw1 lands on position 3 or 4 in the array
+					else if(throw3 == green[3] && player==2 || throw3 == green[4] && player==2){ // if throw1 lands on position 3 or 4 in the array + player = 2
 						
 						System.out.println("Footsteps"); // user gets footsteps
 					}
-					else if(throw3 == green[5] && player==2){ // if throw1 is at position 5 in the array
+					else if(throw3 == green[5] && player==2){ // if throw1 is at position 5 in the array + player = 2
 						shotgun2++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun
 					}
 
-					if(throw3 <= green[2] && player==3){  // if that number is less than position 3 in the array
+					else if(throw3 <= green[2] && player==3){  // if that number is less than position 3 in the array + player = 3
 						brains3++;  // brains in incremented
 						System.out.println("Brains"); // user gets brains	
 					}
-					else if(throw3 == green[3] && player==3 || throw3 == green[4] && player==3){ // if throw1 lands on position 3 or 4 in the array
+					else if(throw3 == green[3] && player==3 || throw3 == green[4] && player==3){ // if throw1 lands on position 3 or 4 in the array + player = 3
 						
 						System.out.println("Footsteps"); // user gets footsteps
 					}
 
-					else if(throw3 == green[5] && player==3){ // if throw1 is at position 5 in the array
+					else if(throw3 == green[5] && player==3){ // if throw1 is at position 5 in the array + player = 3
 						shotgun3++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun
 					}
@@ -516,40 +517,40 @@ class zombiedice{
 					System.out.println("");
 					System.out.println("[yellow]"); // user gets yellow die
 					throw1 = r.nextInt(6) + 1; // throw1 will generate a number between 1 and 6
-					if(throw3 <= yellow[1] && player==1){ // if that number is less than position 1 in the array
+					if(throw3 <= yellow[1] && player==1){ // if that number is less than position 1 in the array + player = 1
 						brains1++; // brains in incremented
 						System.out.println("Brains"); // user gets brains
 						
 					}
-					else if(throw3 == yellow[2] && player==1 || throw3 == yellow[3] && player==1){ // if throw1 lands on position 2 or 3 in the array
+					else if(throw3 == yellow[2] && player==1 || throw3 == yellow[3] && player==1){ // if throw1 lands on position 2 or 3 in the array + player = 1
 						System.out.println("Footsteps");  // user gets footsteps
 					}
-					else if(throw3 == yellow[4] && player==1 || throw3 == yellow[5] && player==1){ // if throw1 lands on position 4 or 5 in the array
+					else if(throw3 == yellow[4] && player==1 || throw3 == yellow[5] && player==1){ // if throw1 lands on position 4 or 5 in the array + player = 1
 						shotgun1++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun	
 					}
 
-					if(throw3 <= yellow[1] && player==2){ // if that number is less than position 1 in the array
+					else if(throw3 <= yellow[1] && player==2){ // if that number is less than position 1 in the array + player = 2
 						brains2++; // brains in incremented
 						System.out.println("Brains"); // user gets brains
 					}
-					else if(throw3 == yellow[2] && player==2 || throw3 == yellow[3] && player==2){ // if throw1 lands on position 2 or 3 in the array
+					else if(throw3 == yellow[2] && player==2 || throw3 == yellow[3] && player==2){ // if throw1 lands on position 2 or 3 in the array + player = 2
 						System.out.println("Footsteps");  // user gets footsteps
 					}
-					else if(throw3 == yellow[4] && player==2 || throw3 == yellow[5] && player==2){ // if throw1 lands on position 4 or 5 in the array
+					else if(throw3 == yellow[4] && player==2 || throw3 == yellow[5] && player==2){ // if throw1 lands on position 4 or 5 in the array + player = 2
 						shotgun2++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun	
 					}
 
-					if(throw3 <= yellow[1] && player==3){ // if that number is less than position 1 in the array
+					else if(throw3 <= yellow[1] && player==3){ // if that number is less than position 1 in the array + player = 3
 						brains3++; // brains in incremented
 						System.out.println("Brains"); // user gets brains
 					}
-					else if(throw3 == yellow[2] && player==3 || throw3 == yellow[3] && player==3){ // if throw1 lands on position 2 or 3 in the array
+					else if(throw3 == yellow[2] && player==3 || throw3 == yellow[3] && player==3){ // if throw1 lands on position 2 or 3 in the array + player = 3
 						System.out.println("Footsteps");  // user gets footsteps
 						
 					}
-					else if(throw3 == yellow[4] && player==3 || throw3 == yellow[5] && player==3){ // if throw1 lands on position 4 or 5 in the array
+					else if(throw3 == yellow[4] && player==3 || throw3 == yellow[5] && player==3){ // if throw1 lands on position 4 or 5 in the array + player = 3
 						shotgun3++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun	
 					}
@@ -558,40 +559,40 @@ class zombiedice{
 				else if(dice3==3){ // if dice3 lands on 3
 					System.out.println(" ");
 					System.out.println("[red]"); // user gets red die
-					if(throw3 <= red[2] && player==1){ // if throw1 is less than position 3
+					if(throw3 <= red[2] && player==1){ // if throw1 is less than position 3 + player = 1
 						shotgun1++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun
 						
 					}
-					else if(throw3 == red[3] && player==1 || throw3 == red[4] && player==1){ // if throw1 lands on position 3 or 4 in the array
+					else if(throw3 == red[3] && player==1 || throw3 == red[4] && player==1){ // if throw1 lands on position 3 or 4 in the array + player = 1
 						System.out.println("Footsteps"); // user gets footsteps
 					}
-					else if(throw3 == red[5] && player==1){ // if throw1 lands on postion 5 in the array
+					else if(throw3 == red[5] && player==1){ // if throw1 lands on postion 5 in the array + player = 1
 						brains1++; // brains in incremented
 						System.out.println("Brains"); // user gets brains
 					}
 
-					if(throw3 <= red[2] && player==2){ // if throw1 is less than position 3
+					else if(throw3 <= red[2] && player==2){ // if throw1 is less than position 3 + player = 2
 						shotgun2++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun
 					}
-					else if(throw3 == red[3] && player==2 || throw3 == red[4] && player==2){ // if throw1 lands on position 3 or 4 in the array
+					else if(throw3 == red[3] && player==2 || throw3 == red[4] && player==2){ // if throw1 lands on position 3 or 4 in the array + player = 2
 						System.out.println("Footsteps"); // user gets footsteps
 					}
-					else if(throw3 == red[5] && player==2){ // if throw1 lands on postion 5 in the array
+					else if(throw3 == red[5] && player==2){ // if throw1 lands on postion 5 in the array + player = 2
 						brains2++; // brains in incremented
 						System.out.println("Brains"); // user gets brains
 					}
 
-					if(throw3 <= red[2] && player==3){ // if throw1 is less than position 3
+					else if(throw3 <= red[2] && player==3){ // if throw1 is less than position 3 + player = 3
 						shotgun3++; // shotgun is incremented
 						System.out.println("Shotgun"); // user gets shotgun
 						
 					}
-					else if(throw3 ==red[3] && player==3 || throw3 == red[4] && player==3){ // if throw1 lands on position 3 or 4 in the array
+					else if(throw3 ==red[3] && player==3 || throw3 == red[4] && player==3){ // if throw1 lands on position 3 or 4 in the array + player = 3
 						System.out.println("Footsteps"); // user gets footsteps
 					}
-					else if(throw3 == red[5] && player==3){ // if throw1 lands on postion 5 in the array
+					else if(throw3 == red[5] && player==3){ // if throw1 lands on postion 5 in the array + player = 3
 						brains3++; // brains in incremented
 						System.out.println("Brains"); // user gets brains
 					}
@@ -599,48 +600,57 @@ class zombiedice{
 
 		    /*----------------------------------------------------------end of dice -------------------------------------------------------*/
 
-			if(brains1a>=13 && player==1 || brains2a>=13 && player==2 || brains3a>= 13 && player==3){
+			if(brains1a>=13 || brains2a>=13 || brains3a>= 13){ // if brains reachs or exceeds 13 and depending on which players turn it is, stop loop and exit game
+				System.out.println("");
 				game=1;
-				exit=0;	
+					
 			}
-			else if(player==1 && shotgun1>=3 || player==2 && shotgun2>=3 || player==3 && shotgun3>=3){
+			else if(player==1 && shotgun1>=3 || player==2 && shotgun2>=3 || player==3 && shotgun3>=3){ // if shotguns reachs or exceeds 3 and depending on which players turn it is, reset and increment player
 				System.out.println("\n");
 				System.out.println("BOOM there goes your head!!!!");
 				brains1=0; // brains is = 0 at start of each turn
 				brains2=0; // brains is = 0 at start of each turn
 				brains3=0; // brains is = 0 at start of each turn
-				shotgun1=0;
-				shotgun2=0;
-				shotgun3=0;
-				player++;
+				shotgun1=0;// shotgun is = 0 at start of each turn
+				shotgun2=0;// shotgun is = 0 at start of each turn
+				shotgun3=0;// shotgun is = 0 at start of each turn
+				player++; // player is incremented
 			}
 			else{
 			System.out.println("\n");
-			System.out.println("Do you want to roll again??? or would you rather cash out???");
-			select2 = in.nextInt();
-				if(select2==2 && player==1){
-					brains1a= brains1a + brains1;
+			System.out.println("Do you want to roll again??? HIT 1 or would you rather cash out??? HIT 2"); // prompt user to cash out or keep rolling
+			select2 = in.nextInt(); // read in players choice
+				if(select2==2 && player==1){ // if player 1 chooses to cash out
+					brains1a= brains1a + brains1; // add there brains from this round to their score saved in brains1a
 					System.out.println(""); 
-					System.out.println("Player 1 cashed out, score = " + brains1a);
+					System.out.println("Player 1 cashed out, score = " + brains1a); // displays player 1 current score after cashing out
+					brains1=0;
+					shotgun1=0;
 					player++;
 					
 				}
-				else if(select2==2 && player==2){
-					brains2a= brains2a + brains2;
+				else if(select2==2 && player==2){ // if player 2 chooses to cash out
+					brains2a= brains2a + brains2;  // add there brains from this round to their score saved in brains2a
 					System.out.println(""); 
-					System.out.println("Player 2 cashed out, score " + brains2a);
+					System.out.println("Player 2 cashed out, score " + brains2a); // displays player 2 current score after cashing out
+					brains2=0;
+					shotgun2=0;
 					player++;
 					
 				}
-				else if(select2==2 && player==3){
-					brains3a= brains3a + brains3;
+				else if(select2==2 && player==3){ // if player 3 chooses to cash out
+					brains3a= brains3a + brains3;  // add there brains from this round to their score saved in brains3a
 					System.out.println(""); 
-					System.out.println("Player 3 cashed out, score " + brains3a);
+					System.out.println("Player 3 cashed out, score " + brains3a); // displays player 3 current score after cashing out
+					brains3=0;
+					shotgun3=0;
 					player++;
-					
+				}
+				else if(select==4){
+					exit=0;
 				}
 			}
-			/*-------------------------------end of loop-----------------------------*/
+			/*--------------------------------------------------end of loop----------------------------------------------------*/
 			}
 		}
 			
@@ -649,11 +659,12 @@ class zombiedice{
 		while(exit!=1);   // As long as exit is not = 0 the game will keep running, otherwise the game will end
 		       
 
-			if(brains1>=13 || brains2>=13 || brains3 >= 13){
-				System.out.println("Congratulations " + player-- + " you win!!!!");
+			if(brains1a>=13 || brains2a>=13 || brains3a >= 13){
+
+				System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+				System.out.println("Congratulations player " + player + " you win!!!!");
 				System.out.println("\n");
-				System.out.println("----------------------");
-				//System.out.println("score = " + brains);  
+				System.out.println("----------------------"); 
 				System.out.println("----------------------");
 				System.out.println("\n");
 				System.out.println("Thanks for playing!!!");
